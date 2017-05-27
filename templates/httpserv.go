@@ -58,7 +58,6 @@ func main() {
 	router := mux.NewRouter()
 	users = append(users, User{ID: "1", Email: "jc3fake@gmail.com", Firstname: "Juan", Lastname: "C3", Location: &Location{State: "CA", Zip: "92129"}})
 	users = append(users, User{ID: "2", Email: "zakydfake@gmail.com", Firstname: "Zaky", Lastname: "Demnianiek"})
-
 	router.HandleFunc("/", handler)
 	router.HandleFunc("/people", getUsersEndpoint).Methods("GET")
 	router.HandleFunc("/people/{id}", getUserEndpoint).Methods("GET")
