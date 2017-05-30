@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67a77399-1155-4dfa-b9d6-8fa49c048a6c" name="Default" comment="" />
+    <list default="true" id="67a77399-1155-4dfa-b9d6-8fa49c048a6c" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/bench_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/context_gorilla.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/context_gorilla_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/context_native.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/context_native_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/doc.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/mux.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/mux_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/old_test.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/regexp.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/route.go" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/GOPATH__CST_.xml" afterPath="$PROJECT_DIR$/.idea/libraries/GOPATH__CST_.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/httpserver.go" afterPath="$PROJECT_DIR$/templates/httpserver.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/webpage.html" afterPath="$PROJECT_DIR$/templates/webpage.html" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -28,21 +47,9 @@
       <file leaf-file-name="webpage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/webpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="306">
+              <caret line="18" column="5" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="18" selection-end-column="5" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="httpserv.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/httpserv.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
-              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-              <folding>
-                <element signature="e#14#93#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -50,9 +57,11 @@
       <file leaf-file-name="httpserver.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/httpserver.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="-275">
+              <caret line="71" column="26" lean-forward="true" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+              <folding>
+                <element signature="e#14#101#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,13 +79,17 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Web/css/main.css" />
         <option value="$PROJECT_DIR$/templates/k" />
-        <option value="$PROJECT_DIR$/templates/webpage.html" />
         <option value="$PROJECT_DIR$/templates/httpserv.go" />
+        <option value="$PROJECT_DIR$/templates/httpserver1.go" />
+        <option value="$PROJECT_DIR$/templates/webpage.html" />
         <option value="$PROJECT_DIR$/templates/httpserver.go" />
       </list>
     </option>
@@ -114,7 +127,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -124,14 +136,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -152,6 +156,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -186,7 +191,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Single File.go run httpserv.go">
+  <component name="RunManager" selected="Go Application.Build httpserver.go and run">
     <configuration default="false" name="webpage.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CST/templates/webpage.html">
       <method />
     </configuration>
@@ -194,6 +199,20 @@
       <module name="CST" />
       <working_directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/templates/httpserv.go" />
+      <method />
+    </configuration>
+    <configuration default="false" name="go run httpserver.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
+      <module name="CST" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/templates/httpserver.go" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build httpserver.go and run" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="CST" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <filePath value="$PROJECT_DIR$/templates/httpserver.go" />
+      <kind value="FILE" />
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -256,6 +275,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -278,14 +303,18 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="2">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.webpage.html" />
       <item index="1" class="java.lang.String" itemvalue="Go Single File.go run httpserv.go" />
+      <item index="2" class="java.lang.String" itemvalue="Go Single File.go run httpserver.go" />
+      <item index="3" class="java.lang.String" itemvalue="Go Application.Build httpserver.go and run" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run httpserv.go" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.webpage.html" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Go Application.Build httpserver.go and run" />
+        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run httpserver.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run httpserv.go" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.webpage.html" />
       </list>
     </recent_temporary>
   </component>
@@ -305,32 +334,32 @@
       <workItem from="1495896206528" duration="726000" />
       <workItem from="1495896949727" duration="2391000" />
       <workItem from="1495899357400" duration="207000" />
-      <workItem from="1495899763424" duration="9819000" />
+      <workItem from="1495899763424" duration="22382000" />
+      <workItem from="1496161011805" duration="2360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14865000" />
+    <option name="totallyTimeSpent" value="29788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="108" width="1616" height="916" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.116875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.116875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283767" sideWeight="0.5025" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283767" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283767" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2176617" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21685255" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -341,10 +370,38 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="11" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Web/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/webpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/httpserver.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1853">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Web/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -422,43 +479,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="e#14#93#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/github.com/gorilla/mux/doc.go">
+    <entry file="file://$PROJECT_DIR$/templates/github.com/gorilla/mux/doc.go" />
+    <entry file="file://$PROJECT_DIR$/../src/github.com/gin-gonic/gin/binding/default_validator.go" />
+    <entry file="file://$PROJECT_DIR$/templates/httpserv.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="497">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/httpserver1.go" />
+    <entry file="file://C:/Go/src/runtime/panic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1255">
+          <caret line="543" column="58" lean-forward="true" selection-start-line="543" selection-start-column="58" selection-end-line="543" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/webpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="7" />
+        <state relative-caret-position="306">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="18" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/httpserv.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="e#14#93#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/httpserver.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="-275">
+          <caret line="71" column="26" lean-forward="true" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+          <folding>
+            <element signature="e#14#101#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
