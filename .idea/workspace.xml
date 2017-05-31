@@ -20,8 +20,8 @@
       <file leaf-file-name="httpserver.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/httpserver.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2044">
-              <caret line="123" column="25" lean-forward="true" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="25" />
+            <state relative-caret-position="1551">
+              <caret line="97" column="18" lean-forward="true" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
               <folding>
                 <element signature="e#14#151#0" expanded="true" />
               </folding>
@@ -32,8 +32,8 @@
       <file leaf-file-name="httpserver1.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/httpserver1.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="139" column="32" lean-forward="true" selection-start-line="139" selection-start-column="32" selection-end-line="139" selection-end-column="32" />
+            <state relative-caret-position="187">
+              <caret line="17" column="65" lean-forward="false" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
               <folding>
                 <element signature="e#14#125#0" expanded="true" />
               </folding>
@@ -334,12 +334,12 @@
       <workItem from="1495896949727" duration="2391000" />
       <workItem from="1495899357400" duration="207000" />
       <workItem from="1495899763424" duration="22382000" />
-      <workItem from="1496161011805" duration="10426000" />
+      <workItem from="1496161011805" duration="13128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37854000" />
+    <option name="totallyTimeSpent" value="40556000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="108" width="1616" height="916" extended-state="6" />
@@ -371,7 +371,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -510,8 +510,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/httpserver.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2044">
-          <caret line="123" column="25" lean-forward="true" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="25" />
+        <state relative-caret-position="1551">
+          <caret line="97" column="18" lean-forward="true" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
           <folding>
             <element signature="e#14#151#0" expanded="true" />
           </folding>
@@ -520,8 +520,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/httpserver1.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="139" column="32" lean-forward="true" selection-start-line="139" selection-start-column="32" selection-end-line="139" selection-end-column="32" />
+        <state relative-caret-position="187">
+          <caret line="17" column="65" lean-forward="false" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
           <folding>
             <element signature="e#14#125#0" expanded="true" />
           </folding>

@@ -15,7 +15,7 @@ type Users struct {
 }
 func InitDb() *gorm.DB {
 	// Openning file
-	db, err := gorm.Open("mysql", "./data.db")
+	db, err := gorm.Open("mysql",  "root:Password!@127.0.0.1/")
 	db.LogMode(true)
 	// Error
 	if err != nil {
@@ -145,7 +145,7 @@ func PostUser(c *gin.Context) {
 		c.JSON(422, gin.H{"error": "Fields are empty"})
 	}
 
-	// curl -i -X POST -H "Content-Type: application/json" -d "{ \"firstname\": \"Thea\", \"lastname\": \"Queen\" }" http://localhost:8080/api/v1/users
+	//curl -i -X POST -H "Content-Type: application/json" -d "{ \"firstname\": \"Thea\", \"lastname\": \"Queen\" }" http://localhost:8080/api/v1/users
 }
 
 func main() {
@@ -159,6 +159,6 @@ func main() {
 		v1.PUT("/users/:id", UpdateUser)
 		v1.DELETE("/users/:id", DeleteUser)
 	}
-
+	InitDb()
 	r.Run(":8080")
 }
