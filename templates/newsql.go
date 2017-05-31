@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"encoding/json"
 	_ "github.com/go-sql-driver/mysql"
-
+	"github.com/gorilla/mux"
 )
 
 type User struct {
@@ -19,9 +19,16 @@ type User struct {
 func isUniqueUser(u User){
 
 }
+func DB() *sql.DB{
+	db, err := sql.Open("mysql", "root:Password!@/users")
+	if err != nil {
+		panic(err)
+	}
+	return db
+}
 
 func addUser(w http.ResponseWriter, r *http.Request) {
-	if r.Method == http.MethodPut {
+	if r.Method == http.MethodPost {
 
 		u := User{}
 
@@ -30,10 +37,7 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 			panic(err)
 		}
 
-		db, err := sql.Open("mysql", "root:Password!@/users")
-		if err != nil {
-			panic(err)
-		}
+		db := DB()
 		q := "SELECT * FROM users WHERE email=?"
 		rows, err := db.Query(q, u.Email)
 		if err != nil {
@@ -46,21 +50,33 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 			//
 		}
 
-		q = "INSERT INTO users VALUES(?, ?)"
-		_, err = db.Exec(q, u.ID, u.Email)
+		q = "INSERT INTO users VALUES(?, ?, ?, ?, ?)"
+		_, err = db.Exec(q, u.ID, u.Email, u.EncrPass, u.Firstname, u.Lastname)
 		if err != nil {
 			//respond with error (on the server side)
 			panic(err)
 		}
-		//new user
+		w.WriteHeader(200)
+		w.Write([]byte("gg"))
 	} else {
-		//return error
+		w.WriteHeader(400)
+		w.Write([]byte("Incorrect request type. Please do a post request"))
+	}
+}
+func getUser(w http.ResponseWriter, r *http.Request) {
+	db := DB()
+	if r.Method == http.MethodGet {
+		params:= mux.Vars(r)
+		q:= "SELECT * FROM users WHERE id=?"
+		rows,_  := db.Query(q, params["id"])
+		json.NewEncoder(w).Encode(rows.Next())
 	}
 }
 
 func server (port string) {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/api/adduser", addUser)
+	mux.HandleFunc("/api/getuser/{id}", getUser)
 	
 	http.ListenAndServe(port, mux)
 }
