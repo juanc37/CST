@@ -86,7 +86,7 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 func server (port string) {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/api/adduser", addUser)
-	mux.HandleFunc("/api/getuser/", getUser)
+	mux.HandleFunc("/api/getuser/{id}", getUser)
 	
 	http.ListenAndServe(port, mux)
 }
