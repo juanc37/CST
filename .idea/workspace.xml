@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a77399-1155-4dfa-b9d6-8fa49c048a6c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/bench_test.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/context_gorilla.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/context_gorilla_test.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/context_native.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/context_native_test.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/doc.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/mux.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/mux_test.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/old_test.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/regexp.go" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/github.com/gorilla/mux/route.go" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/GOPATH__CST_.xml" afterPath="$PROJECT_DIR$/.idea/libraries/GOPATH__CST_.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/httoserver1.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/httpserver.go" afterPath="$PROJECT_DIR$/templates/httpserver.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/webpage.html" afterPath="$PROJECT_DIR$/templates/webpage.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,34 +19,36 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Web/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webpage.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/webpage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="5" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="18" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="httpserver.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/httpserver.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-275">
-              <caret line="71" column="26" lean-forward="true" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+            <state relative-caret-position="-1237">
+              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
               <folding>
-                <element signature="e#14#101#0" expanded="true" />
+                <element signature="e#14#151#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="httoserver1.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/httoserver1.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-251">
+              <caret line="104" column="1" lean-forward="false" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
+              <folding>
+                <element signature="e#14#125#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="httpserv.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/httpserv.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,6 +66,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>time</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -87,10 +79,11 @@
       <list>
         <option value="$PROJECT_DIR$/Web/css/main.css" />
         <option value="$PROJECT_DIR$/templates/k" />
-        <option value="$PROJECT_DIR$/templates/httpserv.go" />
         <option value="$PROJECT_DIR$/templates/httpserver1.go" />
         <option value="$PROJECT_DIR$/templates/webpage.html" />
+        <option value="$PROJECT_DIR$/templates/httpserv.go" />
         <option value="$PROJECT_DIR$/templates/httpserver.go" />
+        <option value="$PROJECT_DIR$/templates/httoserver1.go" />
       </list>
     </option>
   </component>
@@ -191,7 +184,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Application.Build httpserver.go and run">
+  <component name="RunManager" selected="Go Single File.go run httpserv.go">
     <configuration default="false" name="webpage.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CST/templates/webpage.html">
       <method />
     </configuration>
@@ -213,6 +206,12 @@
       <go_parameters value="-i" />
       <filePath value="$PROJECT_DIR$/templates/httpserver.go" />
       <kind value="FILE" />
+      <method />
+    </configuration>
+    <configuration default="false" name="go run httoserver1.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
+      <module name="CST" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/templates/httoserver1.go" />
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -303,18 +302,20 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.webpage.html" />
       <item index="1" class="java.lang.String" itemvalue="Go Single File.go run httpserv.go" />
       <item index="2" class="java.lang.String" itemvalue="Go Single File.go run httpserver.go" />
       <item index="3" class="java.lang.String" itemvalue="Go Application.Build httpserver.go and run" />
+      <item index="4" class="java.lang.String" itemvalue="Go Single File.go run httoserver1.go" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Go Application.Build httpserver.go and run" />
-        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run httpserver.go" />
-        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run httpserv.go" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.webpage.html" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run httpserv.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run httoserver1.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run httpserver.go" />
+        <item index="3" class="java.lang.String" itemvalue="Go Application.Build httpserver.go and run" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.webpage.html" />
       </list>
     </recent_temporary>
   </component>
@@ -335,21 +336,22 @@
       <workItem from="1495896949727" duration="2391000" />
       <workItem from="1495899357400" duration="207000" />
       <workItem from="1495899763424" duration="22382000" />
-      <workItem from="1496161011805" duration="2360000" />
+      <workItem from="1496161011805" duration="10058000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29788000" />
+    <option name="totallyTimeSpent" value="37486000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="108" width="1616" height="916" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.116875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.116875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283767" sideWeight="0.5025" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283767" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283767" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -397,7 +399,7 @@
         <state relative-caret-position="1853">
           <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding>
-            <element signature="e#14#101#0" expanded="true" />
+            <element signature="e#14#151#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -466,14 +468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Web/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/k" />
     <entry file="file://$USER_HOME$/GoglandProjects/CSTBackend/httpserver.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -484,13 +478,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/github.com/gorilla/mux/doc.go" />
     <entry file="file://$PROJECT_DIR$/../src/github.com/gin-gonic/gin/binding/default_validator.go" />
-    <entry file="file://$PROJECT_DIR$/templates/httpserv.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/httpserver1.go" />
     <entry file="file://C:/Go/src/runtime/panic.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -499,20 +486,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Web/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/webpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="5" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="425">
+          <caret line="25" column="47" lean-forward="false" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/httpserv.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/httoserver1.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-251">
+          <caret line="104" column="1" lean-forward="false" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#125#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/httpserver.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-275">
-          <caret line="71" column="26" lean-forward="true" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+        <state relative-caret-position="-1237">
+          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
           <folding>
-            <element signature="e#14#101#0" expanded="true" />
+            <element signature="e#14#151#0" expanded="true" />
           </folding>
         </state>
       </provider>
