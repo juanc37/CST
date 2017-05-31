@@ -6,7 +6,6 @@ import (
 	"encoding/json"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
-	"fmt"
 )
 
 type User struct {
