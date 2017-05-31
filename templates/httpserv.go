@@ -85,4 +85,5 @@ func handler(w http.ResponseWriter, r *http.Request) {
 <p>KEEP IN MIND: this is not connected to the sql server yet so the information will get reset every time i rerun the program on my linux VM so the way of doing it might change for u in the future")</p>
 </body>
 </html>`)
+	//http package servefile
 }

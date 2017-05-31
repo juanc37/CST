@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67a77399-1155-4dfa-b9d6-8fa49c048a6c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/httpserv.go" afterPath="$PROJECT_DIR$/templates/httpserv.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/newsql.go" afterPath="$PROJECT_DIR$/templates/newsql.go" />
     </list>
@@ -26,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/templates/newsql.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="122">
-              <caret line="72" column="36" lean-forward="false" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
+              <caret line="72" column="45" lean-forward="true" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
               <folding>
                 <element signature="e#14#138#0" expanded="true" />
               </folding>
@@ -78,8 +77,8 @@
         <option value="$PROJECT_DIR$/templates/httpserver.go" />
         <option value="$PROJECT_DIR$/templates/httpserver1.go" />
         <option value="$PROJECT_DIR$/templates/makeDB.sql" />
-        <option value="$PROJECT_DIR$/templates/newsql.go" />
         <option value="$PROJECT_DIR$/templates/httpserv.go" />
+        <option value="$PROJECT_DIR$/templates/newsql.go" />
       </list>
     </option>
   </component>
@@ -333,12 +332,12 @@
       <workItem from="1495899357400" duration="207000" />
       <workItem from="1495899763424" duration="22382000" />
       <workItem from="1496161011805" duration="19060000" />
-      <workItem from="1496202731543" duration="8874000" />
+      <workItem from="1496202731543" duration="9029000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55362000" />
+    <option name="totallyTimeSpent" value="55517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="108" width="1616" height="916" extended-state="6" />
@@ -583,7 +582,7 @@
     <entry file="file://$PROJECT_DIR$/templates/newsql.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
-          <caret line="72" column="36" lean-forward="false" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
+          <caret line="72" column="45" lean-forward="true" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
           <folding>
             <element signature="e#14#138#0" expanded="true" />
           </folding>
