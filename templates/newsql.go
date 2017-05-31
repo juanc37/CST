@@ -64,12 +64,22 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 	}
 }
 func getUser(w http.ResponseWriter, r *http.Request) {
+	params:= mux.Vars(r)
 	db := DB()
-	if r.Method == http.MethodGet {
-		params:= mux.Vars(r)
+	defer db.Close()
+	if r.Method == http.MethodPost {
 		q:= "SELECT * FROM users WHERE id=?"
-		rows,_  := db.Query(q, params["id"])
+		rows, err  := db.Query(q, params["id"])
+		if err != nil {
+			panic(err)
+		}
+		defer rows.Close()
+
 		json.NewEncoder(w).Encode(rows.Next())
+
+	} else {
+	w.WriteHeader(400)
+	w.Write([]byte("Incorrect request type. Please do a get request"))
 	}
 }
 
