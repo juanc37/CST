@@ -67,7 +67,7 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 	params:= mux.Vars(r)
 	db := DB()
 	defer db.Close()
-	if r.Method == http.MethodPost {
+	if r.Method == http.MethodGet {
 		q:= "SELECT * FROM users WHERE id=?"
 		rows, err  := db.Query(q, params["id"])
 		if err != nil {
@@ -79,14 +79,14 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 
 	} else {
 	w.WriteHeader(400)
-	w.Write([]byte("Incorrect request type. Please do a get request"))
+	w.Write([]byte("Incorrect request type. Please do a post request"))
 	}
 }
 
 func server (port string) {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/api/adduser", addUser)
-	mux.HandleFunc("/api/getuser/{id}", getUser)
+	mux.HandleFunc("/api/getuser/", getUser)
 	
 	http.ListenAndServe(port, mux)
 }
