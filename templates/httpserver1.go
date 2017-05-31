@@ -105,7 +105,28 @@ func UpdateUser(c *gin.Context) {
 }
 
 func DeleteUser(c *gin.Context) {
-	// The futur code…
+	// Connection to the database
+	db := InitDb()
+	// Close connection database
+	defer db.Close()
+
+	// Get id user
+	id := c.Params.ByName("id")
+	var user Users
+	// SELECT * FROM users WHERE id = 1;
+	db.First(&user, id)
+
+	if user.Id != 0 {
+		// DELETE FROM users WHERE id = user.Id
+		db.Delete(&user)
+		// Display JSON result
+		c.JSON(200, gin.H{"success": "User #" + id + " deleted"})
+	} else {
+		// Display JSON error
+		c.JSON(404, gin.H{"error": "User not found"})
+	}
+
+	// curl -i -X DELETE http://localhost:8080/api/v1/users/1
 }
 func PostUser(c *gin.Context) {
 	db := InitDb()
