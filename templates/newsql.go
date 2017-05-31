@@ -39,13 +39,14 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			panic(err)
 		}
+		defer rows.Close()
 
 		if rows.Next() {
 			//respond with error
 			//
 		}
 
-		q = "INSERT INTO users VALUES(%d, %s)"
+		q = "INSERT INTO users VALUES(?, ?)"
 		_, err = db.Exec(q, u.ID, u.Email)
 		if err != nil {
 			//respond with error (on the server side)
