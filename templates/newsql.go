@@ -34,7 +34,7 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			panic(err)
 		}
-		q := "SELECT * FROM users WHERE email='%s'"
+		q := "SELECT * FROM users WHERE email=?"
 		rows, err := db.Query(q, u.Email)
 		if err != nil {
 			panic(err)
