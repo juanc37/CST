@@ -15,7 +15,7 @@ type Users struct {
 }
 func InitDb() *gorm.DB {
 	// Openning file
-	db, err := gorm.Open("mysql",  "root:Password!@127.0.0.1/")
+	db, err := gorm.Open("mysql", "./data.db")
 	db.LogMode(true)
 	// Error
 	if err != nil {

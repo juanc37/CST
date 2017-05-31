@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a77399-1155-4dfa-b9d6-8fa49c048a6c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/makeDB.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/newsql.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/httpserver.go" afterPath="$PROJECT_DIR$/templates/httpserver.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/httpserver1.go" afterPath="$PROJECT_DIR$/templates/httpserver1.go" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,8 +24,8 @@
       <file leaf-file-name="httpserver.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/httpserver.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1551">
-              <caret line="97" column="18" lean-forward="true" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
+            <state relative-caret-position="357">
+              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
               <folding>
                 <element signature="e#14#151#0" expanded="true" />
               </folding>
@@ -29,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="httpserver1.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="httpserver1.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/httpserver1.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" column="65" lean-forward="false" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+            <state relative-caret-position="-1135">
+              <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
               <folding>
                 <element signature="e#14#125#0" expanded="true" />
               </folding>
@@ -44,8 +48,32 @@
       <file leaf-file-name="httpserv.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/httpserv.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
+              <folding>
+                <element signature="e#14#93#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newsql.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/newsql.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="50" column="17" lean-forward="true" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+              <folding>
+                <element signature="e#14#69#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="makeDB.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/makeDB.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -67,6 +95,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>time</find>
+      <find>gorm</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -79,9 +108,11 @@
         <option value="$PROJECT_DIR$/templates/k" />
         <option value="$PROJECT_DIR$/templates/webpage.html" />
         <option value="$PROJECT_DIR$/templates/httpserv.go" />
-        <option value="$PROJECT_DIR$/templates/httpserver.go" />
         <option value="$PROJECT_DIR$/templates/httoserver1.go" />
+        <option value="$PROJECT_DIR$/templates/httpserver.go" />
         <option value="$PROJECT_DIR$/templates/httpserver1.go" />
+        <option value="$PROJECT_DIR$/templates/makeDB.sql" />
+        <option value="$PROJECT_DIR$/templates/newsql.go" />
       </list>
     </option>
   </component>
@@ -334,12 +365,12 @@
       <workItem from="1495896949727" duration="2391000" />
       <workItem from="1495899357400" duration="207000" />
       <workItem from="1495899763424" duration="22382000" />
-      <workItem from="1496161011805" duration="13128000" />
+      <workItem from="1496161011805" duration="16935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40556000" />
+    <option name="totallyTimeSpent" value="44363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="108" width="1616" height="916" extended-state="6" />
@@ -500,18 +531,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/httpserv.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/httpserver.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1551">
-          <caret line="97" column="18" lean-forward="true" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
+        <state relative-caret-position="357">
+          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
           <folding>
             <element signature="e#14#151#0" expanded="true" />
           </folding>
@@ -520,10 +543,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/httpserver1.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="65" lean-forward="false" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+        <state relative-caret-position="-1135">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
             <element signature="e#14#125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/httpserv.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/makeDB.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newsql.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="50" column="17" lean-forward="true" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+          <folding>
+            <element signature="e#14#69#0" expanded="true" />
           </folding>
         </state>
       </provider>

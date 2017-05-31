@@ -21,7 +21,7 @@ type TransformedTodo struct {
 }
 func Database() *gorm.DB {
 	//open a db connection
-	db, err := gorm.Open("mysql", "root:Password!@//192.168.4.228/todo?charset=utf8&parseTime=True&loc=Local")
+	db, err := gorm.Open("mysql", "root:Password!@192.168.4.228/todo?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		fmt.Print(err)
 	}
