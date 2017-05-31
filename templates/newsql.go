@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"encoding/json"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/gorilla/mux"
+	"fmt"
 )
 
 type User struct {
@@ -64,13 +64,21 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 	}
 }
 func getUser(w http.ResponseWriter, r *http.Request) {
-	params:= mux.Vars(r)
+	//struct for body
+	//{"id": 189}
+	type IdBody struct {
+		Id int `json:"id"`
+	}
+
+	id := IdBody{}
+	json.NewDecoder(r.Body).Decode(&id)
+	fmt.Printf("id: %v", id)
+
 	db := DB()
 	defer db.Close()
 	if r.Method == http.MethodPost {
 		q:= "SELECT * FROM users WHERE id=?"
-		w.Write([]byte(params["id"]))
-		rows, err  := db.Query(q, params["id"])
+		rows, err  := db.Query(q, id)
 		if err != nil {
 			panic(err)
 		}
@@ -87,7 +95,7 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 func server (port string) {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/api/adduser", addUser)
-	mux.HandleFunc("/api/getuser/{id}", getUser)
+	mux.HandleFunc("/api/getuser", getUser)
 	
 	http.ListenAndServe(port, mux)
 }
