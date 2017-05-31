@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
+	"fmt"
 )
 
 type User struct {
@@ -67,8 +68,9 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 	params:= mux.Vars(r)
 	db := DB()
 	defer db.Close()
-	if r.Method == http.MethodGet {
+	if r.Method == http.MethodPost {
 		q:= "SELECT * FROM users WHERE id=?"
+		fmt.Print(params["id"])
 		rows, err  := db.Query(q, params["id"])
 		if err != nil {
 			panic(err)

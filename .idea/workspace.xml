@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/templates/newsql.go" line="52" />
+    <bookmark url="file://$PROJECT_DIR$/templates/newsql.go" line="53" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67a77399-1155-4dfa-b9d6-8fa49c048a6c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/httpserv.go" afterPath="$PROJECT_DIR$/templates/httpserv.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/newsql.go" afterPath="$PROJECT_DIR$/templates/newsql.go" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,10 +25,10 @@
       <file leaf-file-name="newsql.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/newsql.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="88" column="40" lean-forward="false" selection-start-line="88" selection-start-column="40" selection-end-line="88" selection-end-column="40" />
+            <state relative-caret-position="122">
+              <caret line="72" column="36" lean-forward="false" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
               <folding>
-                <element signature="e#14#131#0" expanded="true" />
+                <element signature="e#14#138#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -36,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/templates/httpserv.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="363">
-              <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+              <caret line="87" column="32" lean-forward="false" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
               <folding>
                 <element signature="e#14#93#0" expanded="true" />
               </folding>
@@ -72,12 +74,12 @@
         <option value="$PROJECT_DIR$/Web/css/main.css" />
         <option value="$PROJECT_DIR$/templates/k" />
         <option value="$PROJECT_DIR$/templates/webpage.html" />
-        <option value="$PROJECT_DIR$/templates/httpserv.go" />
         <option value="$PROJECT_DIR$/templates/httoserver1.go" />
         <option value="$PROJECT_DIR$/templates/httpserver.go" />
         <option value="$PROJECT_DIR$/templates/httpserver1.go" />
         <option value="$PROJECT_DIR$/templates/makeDB.sql" />
         <option value="$PROJECT_DIR$/templates/newsql.go" />
+        <option value="$PROJECT_DIR$/templates/httpserv.go" />
       </list>
     </option>
   </component>
@@ -331,12 +333,12 @@
       <workItem from="1495899357400" duration="207000" />
       <workItem from="1495899763424" duration="22382000" />
       <workItem from="1496161011805" duration="19060000" />
-      <workItem from="1496202731543" duration="7605000" />
+      <workItem from="1496202731543" duration="8874000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54093000" />
+    <option name="totallyTimeSpent" value="55362000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="108" width="1616" height="916" extended-state="6" />
@@ -429,7 +431,7 @@
         <state relative-caret-position="510">
           <caret line="36" column="59" lean-forward="true" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
           <folding>
-            <element signature="e#14#131#0" expanded="true" />
+            <element signature="e#14#138#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -571,7 +573,7 @@
     <entry file="file://$PROJECT_DIR$/templates/httpserv.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
-          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <caret line="87" column="32" lean-forward="false" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
           <folding>
             <element signature="e#14#93#0" expanded="true" />
           </folding>
@@ -580,10 +582,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/newsql.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="88" column="40" lean-forward="false" selection-start-line="88" selection-start-column="40" selection-end-line="88" selection-end-column="40" />
+        <state relative-caret-position="122">
+          <caret line="72" column="36" lean-forward="false" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
           <folding>
-            <element signature="e#14#131#0" expanded="true" />
+            <element signature="e#14#138#0" expanded="true" />
           </folding>
         </state>
       </provider>
