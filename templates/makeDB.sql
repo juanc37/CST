@@ -1,4 +1,5 @@
+use "users";
 CREATE TABLE users (
-    id INT
+    id INT,
     email VARCHAR(128)
 )

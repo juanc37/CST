@@ -4,6 +4,8 @@ import (
 	"net/http"
 	"database/sql"
 	"encoding/json"
+	_ "github.com/go-sql-driver/mysql"
+
 )
 
 type User struct {
@@ -63,5 +65,5 @@ func server (port string) {
 }
 
 func main() {
-	
+	server(":8080")
 }
