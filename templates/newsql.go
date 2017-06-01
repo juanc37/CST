@@ -78,7 +78,7 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 	defer db.Close()
 	if r.Method == http.MethodPost {
 		q:= "SELECT * FROM users WHERE id=?"
-		rows, err  := db.Query(q, id)
+		rows, err  := db.Query(q, id.Id)
 		if err != nil {
 			panic(err)
 		}
