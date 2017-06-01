@@ -66,6 +66,7 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 func getUser(w http.ResponseWriter, r *http.Request) {
 	//struct for body
 	//{"id": 189}
+	u := User{}
 	type IdBody struct {
 		ID int `json:"id"`
 	}
@@ -84,6 +85,7 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 			panic(err)
 		}
 		defer rows.Close()
+		rows.Scan(json.NewEncoder(w).Encode(&id))
 		json.NewEncoder(w).Encode(rows)
 
 	} else {
