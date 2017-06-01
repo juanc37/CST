@@ -70,18 +70,16 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 	type IdBody struct {
 		ID int `json:"id"`
 	}
-
 	id := IdBody{}
 	json.NewDecoder(r.Body).Decode(&id)
 	fmt.Printf("id: %v", id)
-
 	db := DB()
 	defer db.Close()
 	if r.Method == http.MethodPost {
 		q:= "SELECT * FROM users WHERE id=?"
 		rows, err  := db.Query(q, id.ID)
 		if err != nil {
-			w.Write([]byte("No such user err at query"))
+			w.Write([]byte("err at query"))
 			panic(err)
 		}
 		defer rows.Close()
