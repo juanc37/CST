@@ -85,8 +85,8 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 			panic(err)
 		}
 		defer rows.Close()
-		rows.Scan(json.NewEncoder(w).Encode(&id))
-		json.NewEncoder(w).Encode(rows)
+		rows.Scan(&u.ID, &u.Email, &u.EncrPass, &u.Firstname, &u.Lastname)
+		json.NewEncoder(w).Encode(u)
 
 	} else {
 	w.WriteHeader(400)
