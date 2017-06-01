@@ -83,13 +83,16 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 			panic(err)
 		}
 		defer rows.Close()
-		var uid, ue, up, uf, ul string
-		rows.Scan(&uid, &ue, &up, &uf, &ul)
-		u.ID = uid
-		u.Email = ue
-		u.EncrPass = up
-		u.Firstname = uf
-		u.Lastname = ul
+		var email string
+		err = db.QueryRow(q, id.ID).Scan(&email)
+		fmt.Print(email)
+		//var uid, ue, up, uf, ul string
+		//rows.Scan(&uid, &ue, &up, &uf, &ul)
+		//u.ID = uid
+		//u.Email = ue
+		//u.EncrPass = up
+		//u.Firstname = uf
+		//u.Lastname = ul
 
 		json.NewEncoder(w).Encode(u)
 
