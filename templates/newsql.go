@@ -5,6 +5,7 @@ import (
 	"database/sql"
 	"encoding/json"
 	_ "github.com/go-sql-driver/mysql"
+	"fmt"
 )
 
 type User struct {
@@ -76,14 +77,13 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 	defer db.Close()
 	if r.Method == http.MethodPost {
 		q:= "SELECT * FROM users WHERE id=?"
-		rows, err  := db.Query(q, id.ID)
+		var uid, ue, up, uf, ul string
+		err  := db.QueryRow(q, id.ID).Scan(&uid, &ue, &up, &uf, &ul)
+		fmt.Print("UE is " , ue)
 		if err != nil {
 			w.Write([]byte("err at query"))
 			panic(err)
 		}
-		defer rows.Close()
-		var uid, ue, up, uf, ul string
-		rows.Scan(&uid, &ue, &up, &uf, &ul)
 		u.ID = string(uid)
 		u.Email = ue
 		u.EncrPass = up
