@@ -82,9 +82,13 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 			panic(err)
 		}
 		defer rows.Close()
-		var temp string
-		db.QueryRow(q,id.ID).Scan(&temp)
-		u.ID = temp
+		var uid, ue, up, uf, ul string
+		rows.Scan(&uid, &ue, &up, &uf, &ul)
+		u.ID = string(uid)
+		u.Email = ue
+		u.EncrPass = up
+		u.Firstname =uf
+		u.Lastname = ul
 		json.NewEncoder(w).Encode(u)
 
 	} else {
