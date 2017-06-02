@@ -77,23 +77,15 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 	defer db.Close()
 	if r.Method == http.MethodPost {
 		q:= "SELECT * FROM users WHERE id=?"
-		rows, err  := db.Prepare(q)
+		rows, err  := db.Query(q, id.ID)
 		if err != nil {
 			w.Write([]byte("err at query"))
 			panic(err)
 		}
 		defer rows.Close()
-		var email string
-		rows.QueryRow(id.ID).Scan(&email)
-		fmt.Println(email)
-		//var uid, ue, up, uf, ul string
-		//rows.Scan(&uid, &ue, &up, &uf, &ul)
-		//u.ID = uid
-		//u.Email = ue
-		//u.EncrPass = up
-		//u.Firstname = uf
-		//u.Lastname = ul
-
+		var temp string
+		db.QueryRow(q,id.ID).Scan(&temp)
+		u.ID = temp
 		json.NewEncoder(w).Encode(u)
 
 	} else {
