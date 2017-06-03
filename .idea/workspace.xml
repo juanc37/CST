@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/templates/htmlMethods.go" line="7" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="67a77399-1155-4dfa-b9d6-8fa49c048a6c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/htmlMethods.go" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/htmlMethods.go" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/newsql.go" afterPath="$PROJECT_DIR$/templates/newsql.go" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,25 +18,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="newsql.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="newsql.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/newsql.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="121" column="13" lean-forward="true" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
+            <state relative-caret-position="-1309">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding>
                 <element signature="e#14#112#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="htmlMethods.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/htmlMethods.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-              <folding>
-                <element signature="e#14#43#0" expanded="true" />
+                <element signature="n#!!block;n#homepage#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -48,7 +34,7 @@
       <file leaf-file-name="httpserv.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/httpserv.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-833">
+            <state relative-caret-position="170">
               <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
               <folding>
                 <element signature="e#14#93#0" expanded="true" />
@@ -91,10 +77,10 @@
         <option value="$PROJECT_DIR$/templates/httpserver1.go" />
         <option value="$PROJECT_DIR$/templates/makeDB.sql" />
         <option value="$PROJECT_DIR$/templates/httpserv.go" />
-        <option value="$PROJECT_DIR$/templates/newsql.go" />
         <option value="$PROJECT_DIR$/templates/httpmethods.go" />
         <option value="$PROJECT_DIR$/templates/html methods.go" />
         <option value="$PROJECT_DIR$/templates/htmlMethods.go" />
+        <option value="$PROJECT_DIR$/templates/newsql.go" />
       </list>
     </option>
   </component>
@@ -374,16 +360,15 @@
       <workItem from="1495899357400" duration="207000" />
       <workItem from="1495899763424" duration="22382000" />
       <workItem from="1496161011805" duration="19060000" />
-      <workItem from="1496202731543" duration="35789000" />
+      <workItem from="1496202731543" duration="36095000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82277000" />
+    <option name="totallyTimeSpent" value="82583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="108" width="1616" height="916" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -392,7 +377,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20693928" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.116875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.116875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="MaxCompute Job" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="MaxCompute Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -428,7 +413,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -473,6 +458,7 @@
           <caret line="36" column="59" lean-forward="true" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
           <folding>
             <element signature="e#14#112#0" expanded="true" />
+            <element signature="n#!!block;n#homepage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -625,7 +611,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/httpserv.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-833">
+        <state relative-caret-position="170">
           <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding>
             <element signature="e#14#93#0" expanded="true" />
@@ -635,21 +621,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/newsql.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="121" column="13" lean-forward="true" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
+        <state relative-caret-position="-1309">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="e#14#112#0" expanded="true" />
+            <element signature="n#!!block;n#homepage#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/htmlMethods.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding>
-            <element signature="e#14#43#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="476">
+          <caret line="33" column="17" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
