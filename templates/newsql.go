@@ -46,7 +46,7 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 		err = db.QueryRow(q, u.Email).Scan(&chkemail)
 		if err != nil {
 			w.WriteHeader(400)
-			w.Write([]byte("error at check for duplicate email"))
+			w.Write([]byte("error at query for duplicate email"))
 			return
 		}
 		//dont take the input and recommend logging in with a forgot password button when
@@ -87,18 +87,18 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodPost {
 		//query, parse and encode
 		q:= "SELECT * FROM users WHERE id=?"
-		var uid, ue, up, uf, ul string
-		err  := db.QueryRow(q, id.ID).Scan(&uid, &ue, &up, &uf, &ul)
+		//var uid, ue, up, uf, ul string
+		err  := db.QueryRow(q, id.ID).Scan(&u.ID, &u.Email, &u.EncrPass, &u.Firstname, &u.Lastname)
 		if err != nil {
 			w.WriteHeader(400)
 			w.Write([]byte("err at query"))
 			return
 		}
-		u.ID = string(uid)
-		u.Email = ue
-		u.EncrPass = up
-		u.Firstname =uf
-		u.Lastname = ul
+		//u.ID = string(uid)
+		//u.Email = ue
+		//u.EncrPass = up
+		//u.Firstname =uf
+		//u.Lastname = ul
 		w.WriteHeader(200)
 		json.NewEncoder(w).Encode(u)
 
