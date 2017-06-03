@@ -31,6 +31,7 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodPost {
 
 		u := User{}
+		u1 := User{}
 		err := json.NewDecoder(r.Body).Decode(&u)
 		if err != nil {
 			w.WriteHeader(400)
@@ -41,9 +42,8 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 		db := DB()
 		defer db.Close()
 		//checking if email is already in database
-		var chkemail string
 		q := "SELECT * FROM users WHERE email=?"
-		err = db.QueryRow(q, u.Email).Scan(&chkemail)
+		err = db.QueryRow(q, u.Email).Scan(&u1.ID, &u1.Email, &u1.EncrPass, &u1.Firstname, &u1.Lastname)
 		if err != nil {
 			w.WriteHeader(400)
 			w.Write([]byte("error at query for duplicate email"))
@@ -51,7 +51,7 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 		}
 		//dont take the input and recommend logging in with a forgot password button when
 		// the user enters a signup email that is the same as one in the database
-		if chkemail == u.Email {
+		if u1.Email == u.Email {
 			w.WriteHeader(400)
 			w.Write([]byte("This email has already been used. Queue login?"))
 			return
@@ -87,18 +87,12 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodPost {
 		//query, parse and encode
 		q:= "SELECT * FROM users WHERE id=?"
-		//var uid, ue, up, uf, ul string
 		err  := db.QueryRow(q, id.ID).Scan(&u.ID, &u.Email, &u.EncrPass, &u.Firstname, &u.Lastname)
 		if err != nil {
 			w.WriteHeader(400)
-			w.Write([]byte("err at query"))
+			w.Write([]byte("err at query : check ID field"))
 			return
 		}
-		//u.ID = string(uid)
-		//u.Email = ue
-		//u.EncrPass = up
-		//u.Firstname =uf
-		//u.Lastname = ul
 		w.WriteHeader(200)
 		json.NewEncoder(w).Encode(u)
 
