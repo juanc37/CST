@@ -60,7 +60,7 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 		}
 		//enter the values in the database
 		q = "INSERT INTO users VALUES(?, ?, ?, ?, ?)"
-		_, err = db.Exec(q, u.ID, u.Email, u.EncrPass, u.Firstname, u.Lastname)
+		_, err = db.Exec(q, "null", u.Email, u.EncrPass, u.Firstname, u.Lastname)
 		if err != nil {
 			w.WriteHeader(400)
 			w.Write([]byte("error when writing info to database. (incorrect format?) "))
