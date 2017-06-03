@@ -45,6 +45,7 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 		q := "SELECT * FROM users WHERE email=?"
 		err = db.QueryRow(q, u.Email).Scan(&u1.ID, &u1.Email, &u1.EncrPass, &u1.Firstname, &u1.Lastname)
 		if err != nil {
+			fmt.Println(err)
 			w.WriteHeader(400)
 			w.Write([]byte("error at query for duplicate email"))
 			return
