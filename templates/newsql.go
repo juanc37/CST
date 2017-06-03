@@ -16,8 +16,27 @@ type User struct {
 	Lastname string `json:"lastname"`
 }
 
-func isUniqueUser(u User){
-	//Todo: create a method for this
+func isUniqueUser(u User, db *sql.DB, w http.ResponseWriter) bool{
+	u1 := User{}
+	//checking if email is already in database
+	q := "SELECT * FROM users WHERE email=?"
+	err := db.QueryRow(q, u.Email).Scan(&u1.ID, &u1.Email, &u1.EncrPass, &u1.Firstname, &u1.Lastname)
+	if err == nil {
+		//dont take the input and recommend logging in with a forgot password button when
+		// the user enters a signup email that is the same as one in the database
+		if u1.Email == u.Email {
+			w.WriteHeader(400)
+			w.Write([]byte("This email has already been used. Queue login?"))
+			return false
+		}
+	} else if err == sql.ErrNoRows{
+		return true
+	} else {
+		w.WriteHeader(400)
+		w.Write([]byte("error at query for email"))
+		return false
+	}
+	return false
 }
 func DB() *sql.DB{
 	db, err := sql.Open("mysql", "root:Password!@/users")
@@ -31,7 +50,7 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodPost {
 
 		u := User{}
-		u1 := User{}
+		//u1 := User{}
 		err := json.NewDecoder(r.Body).Decode(&u)
 		if err != nil {
 			w.WriteHeader(400)
@@ -41,26 +60,31 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 
 		db := DB()
 		defer db.Close()
-		//checking if email is already in database
-		q := "SELECT * FROM users WHERE email=?"
-		err = db.QueryRow(q, u.Email).Scan(&u1.ID, &u1.Email, &u1.EncrPass, &u1.Firstname, &u1.Lastname)
-		if err == nil {
-			//dont take the input and recommend logging in with a forgot password button when
-			// the user enters a signup email that is the same as one in the database
-			if u1.Email == u.Email {
-				w.WriteHeader(400)
-				w.Write([]byte("This email has already been used. Queue login?"))
-				return
-			}
-		} else if err == sql.ErrNoRows{
-			//nothing to see here
-		} else {
-			w.WriteHeader(400)
-			w.Write([]byte("error at query for email"))
-		}
+
+		////checking if email is already in database
+		//q := "SELECT * FROM users WHERE email=?"
+		//err = db.QueryRow(q, u.Email).Scan(&u1.ID, &u1.Email, &u1.EncrPass, &u1.Firstname, &u1.Lastname)
+		//if err == nil {
+		//	//dont take the input and recommend logging in with a forgot password button when
+		//	// the user enters a signup email that is the same as one in the database
+		//	if u1.Email == u.Email {
+		//		w.WriteHeader(400)
+		//		w.Write([]byte("This email has already been used. Queue login?"))
+		//		return
+		//	}
+		//} else if err == sql.ErrNoRows{
+		//	//nothing to see here
+		//} else {
+		//	w.WriteHeader(400)
+		//	w.Write([]byte("error at query for email"))
+		//}
 		//enter the values in the database
-		q = "INSERT INTO users VALUES(?, ?, ?, ?, ?)"
-		_, err = db.Exec(q, "null", u.Email, u.EncrPass, u.Firstname, u.Lastname)
+		if isUniqueUser(u, db, w) == false{
+			return
+		}
+		q := "INSERT INTO users VALUES(?, ?, ?, ?, ?)"
+		//Todo fix auto inc
+		_, err = db.Exec(q, u.ID, u.Email, u.EncrPass, u.Firstname, u.Lastname)
 		if err != nil {
 			w.WriteHeader(400)
 			w.Write([]byte("error when writing info to database. (incorrect format?) "))
