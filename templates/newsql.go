@@ -44,26 +44,26 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 		//checking if email is already in database
 		q := "SELECT * FROM users WHERE email=?"
 		err = db.QueryRow(q, u.Email).Scan(&u1.ID, &u1.Email, &u1.EncrPass, &u1.Firstname, &u1.Lastname)
-		if err != nil {
-			fmt.Println(err)
+		if err == nil {
+			//dont take the input and recommend logging in with a forgot password button when
+			// the user enters a signup email that is the same as one in the database
+			if u1.Email == u.Email {
+				w.WriteHeader(400)
+				w.Write([]byte("This email has already been used. Queue login?"))
+				return
+			}
+		} else if err == sql.ErrNoRows{
+			//nothing to see here
+		} else {
 			w.WriteHeader(400)
-			w.Write([]byte("error at query for duplicate email"))
-			return
+			w.Write([]byte("error at query for email"))
 		}
-		//dont take the input and recommend logging in with a forgot password button when
-		// the user enters a signup email that is the same as one in the database
-		if u1.Email == u.Email {
-			w.WriteHeader(400)
-			w.Write([]byte("This email has already been used. Queue login?"))
-			return
-		}
-
+		//enter the values in the database
 		q = "INSERT INTO users VALUES(?, ?, ?, ?, ?)"
 		_, err = db.Exec(q, u.ID, u.Email, u.EncrPass, u.Firstname, u.Lastname)
 		if err != nil {
 			w.WriteHeader(400)
-			w.Write([]byte("error writing values in the "))
-
+			w.Write([]byte("error when writing info to database. (incorrect format?) "))
 			return
 		}
 		w.WriteHeader(200)
