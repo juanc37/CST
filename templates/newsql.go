@@ -67,7 +67,7 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 		//enter the values in the database
 		q := "INSERT INTO users VALUES(?, ?, ?, ?, ?)"
 		//Todo fix auto inc
-		_, err = db.Exec(q, "NULL", u.Email, u.EncrPass, u.Firstname, u.Lastname)
+		_, err = db.Exec(q, u.ID, u.Email, u.EncrPass, u.Firstname, u.Lastname)
 		if err != nil {
 			w.WriteHeader(400)
 			w.Write([]byte("error when writing info to database. (incorrect format?) "))
@@ -112,6 +112,7 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 
 func server (port string) {
 	mux := http.NewServeMux()
+	mux.HandleFunc("/", homepage)
 	mux.HandleFunc("/api/adduser", addUser)
 	mux.HandleFunc("/api/getuser", getUser)
 	
