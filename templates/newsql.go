@@ -114,21 +114,27 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 }
 func getUser(w http.ResponseWriter, r *http.Request) {
 	//struct for body
-	//{"id": 189}
+	//{"id": 189, "access":"secret code"}
 	u := User{}
 	//creating stuct & json parse
 	type IdBody struct {
 		ID int `json:"id"`
+		Accesscode string `json:"access"`
 	}
-	id := IdBody{}
-	json.NewDecoder(r.Body).Decode(&id)
+	bod := IdBody{}
+	json.NewDecoder(r.Body).Decode(&bod)
+	if bod.Accesscode != "wiener"{
+		w.WriteHeader(400)
+		w.Write([]byte("icorrect passcode"))
+		return
+	}
 	db := DB()
 	defer db.Close()
 	//check post method
 	if r.Method == http.MethodPost {
 		//query, parse and encode
 		q:= "SELECT * FROM users WHERE id=?"
-		err  := db.QueryRow(q, id.ID).Scan(&u.ID, &u.Email, &u.EncrPass, &u.Firstname, &u.Lastname)
+		err  := db.QueryRow(q, bod.ID).Scan(&u.ID, &u.Email, &u.EncrPass, &u.Firstname, &u.Lastname)
 		if err != nil {
 			w.WriteHeader(400)
 			w.Write([]byte("err at query : check ID field"))
