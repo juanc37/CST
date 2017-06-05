@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a77399-1155-4dfa-b9d6-8fa49c048a6c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/newsql.go" afterPath="$PROJECT_DIR$/templates/newsql.go" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,8 +20,8 @@
       <file leaf-file-name="newsql.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/newsql.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="102" column="35" lean-forward="false" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
+            <state relative-caret-position="310">
+              <caret line="100" column="97" lean-forward="true" selection-start-line="100" selection-start-column="97" selection-end-line="100" selection-end-column="97" />
               <folding>
                 <element signature="e#14#112#0" expanded="true" />
                 <element signature="n#!!block;n#homepage#0" expanded="false" />
@@ -362,12 +361,12 @@
       <workItem from="1495899357400" duration="207000" />
       <workItem from="1495899763424" duration="22382000" />
       <workItem from="1496161011805" duration="19060000" />
-      <workItem from="1496202731543" duration="39065000" />
+      <workItem from="1496202731543" duration="39415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85553000" />
+    <option name="totallyTimeSpent" value="85903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="108" width="1616" height="916" extended-state="6" />
@@ -634,8 +633,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/newsql.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="102" column="35" lean-forward="false" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
+        <state relative-caret-position="310">
+          <caret line="100" column="97" lean-forward="true" selection-start-line="100" selection-start-column="97" selection-end-line="100" selection-end-column="97" />
           <folding>
             <element signature="e#14#112#0" expanded="true" />
             <element signature="n#!!block;n#homepage#0" expanded="false" />
