@@ -20,13 +20,16 @@
       <file leaf-file-name="newsql.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/newsql.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="143" column="44" lean-forward="true" selection-start-line="143" selection-start-column="44" selection-end-line="143" selection-end-column="44" />
+            <state relative-caret-position="476">
+              <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding>
                 <element signature="e#14#112#0" expanded="true" />
                 <element signature="n#!!block;n#homepage#0" expanded="false" />
                 <element signature="n#!!block;n#isUniqueUser#0" expanded="false" />
                 <element signature="n#!!block;n#DB#0" expanded="false" />
+                <element signature="e#2855#2959#0" expanded="false" />
+                <element signature="e#2987#3081#0" expanded="false" />
+                <element signature="e#4001#4101#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -361,12 +364,12 @@
       <workItem from="1495899357400" duration="207000" />
       <workItem from="1495899763424" duration="22382000" />
       <workItem from="1496161011805" duration="19060000" />
-      <workItem from="1496202731543" duration="40806000" />
+      <workItem from="1496202731543" duration="41616000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87294000" />
+    <option name="totallyTimeSpent" value="88104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="108" width="1616" height="916" extended-state="6" />
@@ -415,7 +418,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -463,6 +466,9 @@
             <element signature="n#!!block;n#homepage#0" expanded="false" />
             <element signature="n#!!block;n#isUniqueUser#0" expanded="false" />
             <element signature="n#!!block;n#DB#0" expanded="false" />
+            <element signature="e#2855#2959#0" expanded="false" />
+            <element signature="e#2987#3081#0" expanded="false" />
+            <element signature="e#4001#4101#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -633,13 +639,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/newsql.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="143" column="44" lean-forward="true" selection-start-line="143" selection-start-column="44" selection-end-line="143" selection-end-column="44" />
+        <state relative-caret-position="476">
+          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding>
             <element signature="e#14#112#0" expanded="true" />
             <element signature="n#!!block;n#homepage#0" expanded="false" />
             <element signature="n#!!block;n#isUniqueUser#0" expanded="false" />
             <element signature="n#!!block;n#DB#0" expanded="false" />
+            <element signature="e#2855#2959#0" expanded="false" />
+            <element signature="e#2987#3081#0" expanded="false" />
+            <element signature="e#4001#4101#0" expanded="false" />
           </folding>
         </state>
       </provider>

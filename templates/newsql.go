@@ -8,12 +8,20 @@ import (
 	"fmt"
 )
 
-type User struct {
+type qUser struct {
 	ID string `json:"id"`
 	Email string `json:"email"`
 	EncrPass string `json:"password"`
 	Firstname string `json:"firstname"`
 	Lastname string `json:"lastname"`
+	Accesscode string `json:"access"`
+}
+type User struct {
+	ID        string `json:"id"`
+	Email     string `json:"email"`
+	EncrPass  string `json:"password"`
+	Firstname string `json:"firstname"`
+	Lastname  string `json:"lastname"`
 }
 func homepage(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, `<!DOCTYPE html>
@@ -48,7 +56,7 @@ func homepage(w http.ResponseWriter, r *http.Request) {
 	</html>`)
 }
 
-func isUniqueUser(u User, db *sql.DB, w http.ResponseWriter) bool{
+func isUniqueUser(u qUser, db *sql.DB, w http.ResponseWriter) bool{
 	u1 := User{}
 	//checking if email is already in database
 	q := "SELECT * FROM users WHERE email=?"
@@ -82,7 +90,7 @@ func DB() *sql.DB{
 func addUser(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodPost {
 
-		u := User{}
+		u := qUser{}
 		//u1 := User{}
 		err := json.NewDecoder(r.Body).Decode(&u)
 		if err != nil {
@@ -90,7 +98,11 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 			w.Write([]byte("error in parsing user information. try again"))
 			return
 		}
-
+		if u.Accesscode != "dong"{
+			w.WriteHeader(400)
+			w.Write([]byte("icorrect passcode to create a user"))
+			return
+		}
 		db := DB()
 		defer db.Close()
 		////checking if email is already in database
@@ -122,10 +134,15 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 		Accesscode string `json:"access"`
 	}
 	bod := IdBody{}
-	json.NewDecoder(r.Body).Decode(&bod)
+	err := json.NewDecoder(r.Body).Decode(&bod)
+	if err != nil {
+		w.WriteHeader(400)
+		w.Write([]byte("error in parsing user information. try again"))
+		return
+	}
 	if bod.Accesscode != "wiener"{
 		w.WriteHeader(400)
-		w.Write([]byte("icorrect passcode"))
+		w.Write([]byte("icorrect passcode to access users"))
 		return
 	}
 	db := DB()
