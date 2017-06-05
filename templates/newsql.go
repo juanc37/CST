@@ -70,6 +70,7 @@ func isUniqueUser(u User, db *sql.DB, w http.ResponseWriter) bool{
 	}
 	return false
 }
+
 func DB() *sql.DB{
 	db, err := sql.Open("mysql", "root:Password!@/users")
 	if err != nil {
@@ -97,9 +98,9 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 		//enter the values in the database
-		q := "INSERT INTO users VALUES(?, ?, ?, ?, ?)"
+		q := "INSERT INTO users(id) VALUES(?, ?, ?, ?)"
 		//Todo fix auto inc
-		_, err = db.Exec(q, u.ID, u.Email, u.EncrPass, u.Firstname, u.Lastname)
+		_, err = db.Exec(q, u.Email, u.EncrPass, u.Firstname, u.Lastname)
 		if err != nil {
 			w.WriteHeader(400)
 			w.Write([]byte("error when writing info to database. (incorrect format?) "))
