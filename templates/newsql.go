@@ -111,7 +111,6 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 		}
 		//enter the values in the database
 		q := "INSERT INTO users(email, password, firstname, lastname) VALUES(?, ?, ?, ?)"
-		//Todo fix auto inc
 		_, err = db.Exec(q, u.Email, u.EncrPass, u.Firstname, u.Lastname)
 		if err != nil {
 			w.WriteHeader(400)
