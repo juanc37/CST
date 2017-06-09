@@ -1,12 +1,10 @@
 package main
-
 import (
 	"net/http"
 	"fmt"
 	"encoding/json"
 	"database/sql"
 	_ "github.com/go-sql-driver/mysql"
-
 )
 type qUser struct {
 	ID string `json:"id"`
