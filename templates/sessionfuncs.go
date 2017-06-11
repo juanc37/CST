@@ -76,14 +76,21 @@ func getAllTutorSessions(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodPost {
 		//query, parse and encode
 		q:= "SELECT * FROM sessions WHERE tutorID=?"
-		err  := db.QueryRow(q, bod.ID).Scan(&s.ID, &s.Tutoree, &s.Tutor, &s.Time, &s.Location, &s.Clockin, &s.Clockout)
+		rows,err := db.Query(q, bod.ID)
 		if err != nil {
 			w.WriteHeader(400)
 			w.Write([]byte("err at query : check ID field"))
 			return
 		}
+		for rows.Next() {
+			err = rows.Scan(&s.ID, &s.Tutoree, &s.Tutor, &s.Time, &s.Location, &s.Clockin, &s.Clockout)
+			if err != nil {
+				w.WriteHeader(400)
+				w.Write([]byte("error while scanning rows"))
+			}
+			json.NewEncoder(w).Encode(s)
+		}
 		w.WriteHeader(200)
-		json.NewEncoder(w).Encode(s)
 
 	} else {
 		w.WriteHeader(400)
