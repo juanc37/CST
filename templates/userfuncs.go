@@ -76,7 +76,7 @@ func isUniqueUser(u qUser, db *sql.DB, w http.ResponseWriter) bool{
 	return false
 }
 
-func DB() *sql.DB{
+func uDB() *sql.DB{
 	db, err := sql.Open("mysql", "root:Password!@/users")
 	if err != nil {
 		fmt.Print("could not access the database")
@@ -88,7 +88,6 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodPost {
 
 		u := qUser{}
-		//u1 := User{}
 		err := json.NewDecoder(r.Body).Decode(&u)
 		if err != nil {
 			w.WriteHeader(400)
@@ -100,7 +99,7 @@ func addUser(w http.ResponseWriter, r *http.Request) {
 			w.Write([]byte("icorrect passcode to create a user"))
 			return
 		}
-		db := DB()
+		db := uDB()
 		defer db.Close()
 		////checking if email is already in database
 		if isUniqueUser(u, db, w) == false{
@@ -141,7 +140,7 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("icorrect passcode to access users"))
 		return
 	}
-	db := DB()
+	db := uDB()
 	defer db.Close()
 	//check post method
 	if r.Method == http.MethodPost {
