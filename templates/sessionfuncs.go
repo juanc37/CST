@@ -77,6 +77,7 @@ func getAllTutorSessions(w http.ResponseWriter, r *http.Request) {
 		//query, parse and encode
 		q:= "SELECT * FROM sessions WHERE tutorID=?"
 		rows,err := db.Query(q, bod.ID)
+		defer rows.Close()
 		if err != nil {
 			w.WriteHeader(400)
 			w.Write([]byte("err at query : check ID field"))
@@ -125,6 +126,7 @@ func getAllTutoreeSessions(w http.ResponseWriter, r *http.Request) {
 		//query, parse and encode
 		q:= "SELECT * FROM sessions WHERE tutoreeID=?"
 		rows,err := db.Query(q, bod.ID)
+		defer rows.Close()
 		if err != nil {
 			w.WriteHeader(400)
 			w.Write([]byte("err at query : check ID field"))

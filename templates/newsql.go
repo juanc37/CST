@@ -10,6 +10,10 @@ func server (port string) {
 	mux.HandleFunc("/", homepage)
 	mux.HandleFunc("/api/adduser", addUser)
 	mux.HandleFunc("/api/getuser", getUser)
+	mux.HandleFunc("/api/addsession", addSession)
+	mux.HandleFunc("/api/getsession", getSession)
+	mux.HandleFunc("/api/gettutorsessions", getAllTutorSessions)
+	mux.HandleFunc("/api/gettutoreesessions", getAllTutoreeSessions)
 	
 	http.ListenAndServe(port, mux)
 }

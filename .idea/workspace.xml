@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a77399-1155-4dfa-b9d6-8fa49c048a6c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/newsql.go" afterPath="$PROJECT_DIR$/templates/newsql.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/sessionfuncs.go" afterPath="$PROJECT_DIR$/templates/sessionfuncs.go" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,8 +21,8 @@
       <file leaf-file-name="newsql.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/newsql.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
               <folding>
                 <element signature="e#14#72#0" expanded="true" />
               </folding>
@@ -32,8 +33,8 @@
       <file leaf-file-name="userfuncs.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/userfuncs.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-765">
-              <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+            <state relative-caret-position="442">
+              <caret line="62" column="89" lean-forward="true" selection-start-line="62" selection-start-column="89" selection-end-line="62" selection-end-column="89" />
               <folding>
                 <element signature="e#13#111#0" expanded="true" />
                 <element signature="n#!!block;n#homepage#0" expanded="false" />
@@ -46,8 +47,8 @@
       <file leaf-file-name="sessionfuncs.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/sessionfuncs.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="99" column="18" lean-forward="false" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+            <state relative-caret-position="2023">
+              <caret line="125" column="41" lean-forward="true" selection-start-line="125" selection-start-column="41" selection-end-line="125" selection-end-column="41" />
               <folding>
                 <element signature="e#13#111#0" expanded="true" />
               </folding>
@@ -94,9 +95,9 @@
         <option value="$PROJECT_DIR$/templates/htmlMethods.go" />
         <option value="$PROJECT_DIR$/httpfuncs/httpfuncs.go" />
         <option value="$PROJECT_DIR$/templates/httpfuncs.go" />
-        <option value="$PROJECT_DIR$/templates/newsql.go" />
         <option value="$PROJECT_DIR$/templates/userfuncs.go" />
         <option value="$PROJECT_DIR$/templates/sessionfuncs.go" />
+        <option value="$PROJECT_DIR$/templates/newsql.go" />
       </list>
     </option>
   </component>
@@ -384,12 +385,12 @@
       <workItem from="1495899357400" duration="207000" />
       <workItem from="1495899763424" duration="22382000" />
       <workItem from="1496161011805" duration="19060000" />
-      <workItem from="1496202731543" duration="54757000" />
+      <workItem from="1496202731543" duration="55494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101245000" />
+    <option name="totallyTimeSpent" value="101982000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
@@ -649,8 +650,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/newsql.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
           <folding>
             <element signature="e#14#72#0" expanded="true" />
           </folding>
@@ -659,8 +660,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/userfuncs.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-765">
-          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        <state relative-caret-position="442">
+          <caret line="62" column="89" lean-forward="true" selection-start-line="62" selection-start-column="89" selection-end-line="62" selection-end-column="89" />
           <folding>
             <element signature="e#13#111#0" expanded="true" />
             <element signature="n#!!block;n#homepage#0" expanded="false" />
@@ -671,8 +672,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/sessionfuncs.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="99" column="18" lean-forward="false" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+        <state relative-caret-position="2023">
+          <caret line="125" column="41" lean-forward="true" selection-start-line="125" selection-start-column="41" selection-end-line="125" selection-end-column="41" />
           <folding>
             <element signature="e#13#111#0" expanded="true" />
           </folding>
