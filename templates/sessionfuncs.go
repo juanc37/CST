@@ -97,6 +97,54 @@ func getAllTutorSessions(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Incorrect request type. Please do a post request"))
 	}
 }
+func getAllTutoreeSessions(w http.ResponseWriter, r *http.Request) {
+	//struct for body
+	//{"id": 189, "access":"secret code"}
+	s := Session{}
+	//creating stuct & json parse
+	type IdBody struct {
+		ID int `json:"id"`
+		Accesscode string `json:"access"`
+	}
+	bod := IdBody{}
+	err := json.NewDecoder(r.Body).Decode(&bod)
+	if err != nil {
+		w.WriteHeader(400)
+		w.Write([]byte("error in parsing user information. try again"))
+		return
+	}
+	if bod.Accesscode != "wiener"{
+		w.WriteHeader(400)
+		w.Write([]byte("icorrect passcode to access users"))
+		return
+	}
+	db := uDB()
+	defer db.Close()
+	//check post method
+	if r.Method == http.MethodPost {
+		//query, parse and encode
+		q:= "SELECT * FROM sessions WHERE tutoreeID=?"
+		rows,err := db.Query(q, bod.ID)
+		if err != nil {
+			w.WriteHeader(400)
+			w.Write([]byte("err at query : check ID field"))
+			return
+		}
+		for rows.Next() {
+			err = rows.Scan(&s.ID, &s.Tutoree, &s.Tutor, &s.Time, &s.Location, &s.Clockin, &s.Clockout)
+			if err != nil {
+				w.WriteHeader(400)
+				w.Write([]byte("error while scanning rows"))
+			}
+			json.NewEncoder(w).Encode(s)
+		}
+		w.WriteHeader(200)
+
+	} else {
+		w.WriteHeader(400)
+		w.Write([]byte("Incorrect request type. Please do a post request"))
+	}
+}
 func getSession(w http.ResponseWriter, r *http.Request) {
 	//struct for body
 	//{"id": 189, "access":"secret code"}
