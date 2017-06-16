@@ -20,6 +20,7 @@ type User struct {
 	EncrPass  string `json:"password"`
 	Firstname string `json:"firstname"`
 	Lastname  string `json:"lastname"`
+	Token     string `json:"token"`
 }
 func homepage(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, `<!DOCTYPE html>
@@ -146,7 +147,7 @@ func getUser(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodPost {
 		//query, parse and encode
 		q:= "SELECT * FROM users WHERE id=?"
-		err  := db.QueryRow(q, bod.ID).Scan(&u.ID, &u.Email, &u.EncrPass, &u.Firstname, &u.Lastname)
+		err  := db.QueryRow(q, bod.ID).Scan(&u.ID, &u.Email, &u.EncrPass, &u.Firstname, &u.Lastname, &u.Token)
 		if err != nil {
 			w.WriteHeader(400)
 			w.Write([]byte("err at query : check ID field"))

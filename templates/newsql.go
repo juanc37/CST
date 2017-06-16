@@ -6,6 +6,7 @@ import (
 )
 
 func server (port string) {
+	//todo: login
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", homepage)
 	mux.HandleFunc("/api/adduser", addUser)
